@@ -1,14 +1,40 @@
 import React, { useState } from "react";
 import "./Report.css";
 
-function Report() {
-  const [link, setLink] = useState("");
+function Report({ url }) {
+  console.log(`url =`, url);
+  if (url === undefined && url === null) {
+    url = "";
+  }
+  const [link, setLink] = useState(url);
   const [category, setCategory] = useState("none");
   const [story, setStory] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(link);
+    var myHeaders = new Headers();
+    myHeaders.append("Content-Type", "application/json");
+
+    var raw = JSON.stringify({
+      url: link,
+      report_string: story,
+      categories: [category],
+    });
+
+    var requestOptions = {
+      method: "POST",
+      headers: myHeaders,
+      body: raw,
+      redirect: "follow",
+    };
+
+    fetch("http://localhost:5000/api/report", requestOptions)
+      .then((response) => response.text())
+      .then((result) => {
+        console.log(result);
+        alert("Submitted successfully");
+      })
+      .catch((error) => console.log("error", error));
 
     // db.collection("submissions")
     //   .add({
@@ -44,6 +70,7 @@ function Report() {
               placeholder="Link..."
               name="link"
               value={link}
+              defaultValue={link}
               onChange={(e) => setLink(e.target.value)}
             ></input>
           </div>
@@ -98,6 +125,7 @@ function Report() {
             ></input>
           </div>
         </form>
+
         <empty className="empty"></empty>
       </div>
     </div>
