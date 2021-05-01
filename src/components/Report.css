@@ -7,15 +7,11 @@
 
 .Report {
   background-image: url("../images/Cover_5.svg");
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-}
-
-input,
-button {
-  font-family: Lucidatypewriter, monospace;
 }
 
 .form {
@@ -26,6 +22,7 @@ button {
 
 .report__heading {
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .report__input {
@@ -49,8 +46,9 @@ button {
 }
 
 .report__label {
+  float: left;
   padding-bottom: 10px;
-  color: rgb(0, 0, 32);
+  color: #fff;
   font-weight: bold;
 }
 
@@ -65,6 +63,7 @@ button {
   cursor: pointer;
   transition: 0.2s ease-in-out;
   margin-top: 10px;
+  float: left;
 }
 
 .form > button:hover {
