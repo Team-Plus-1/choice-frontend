@@ -1,67 +1,87 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Lucidatypewriter, monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lucidatypewriter, monospace;
 }
 
 .dash__container {
-  background-image: url("../images/Cover_5.svg");
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background-image: url("../images/Cover_5.svg");
+    height: calc(100vh - 70px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .dash__email {
-  color: #fff;
+    color: #fff;
 }
 
 .dashboard__heading {
-  margin-bottom: 30px;
-  color: #fff;
+    margin-bottom: 30px;
+    color: #fff;
 }
 
 .dashboard__logout {
-  padding: 10px;
-  border: none;
-  background-color: rgb(185, 0, 0);
-  font-weight: 500;
-  font-size: 20px;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  margin-top: 10px;
-  margin-top: 100px;
-  float: right;
-  margin-right: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(185, 0, 0);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
+    margin-top: 100px;
+    float: right;
+    margin-right: 20px;
 }
 
 .dashboard__logout:hover {
-  background-color: rgb(224, 86, 86);
+    background-color: rgb(224, 86, 86);
 }
 
 .dashboard__updateBtn {
-  padding: 10px;
-  border: none;
-  background-color: rgb(62, 114, 4);
-  font-weight: 500;
-  font-size: 20px;
-  border-radius: 3px;
-  color: #fff;
-  cursor: pointer;
-  transition: 0.2s ease-in-out;
-  margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(62, 114, 4);
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    margin-top: 10px;
 }
 
 .dashboard__updateBtn:hover {
-  background-color: rgb(34, 179, 20);
+    background-color: rgb(34, 179, 20);
 }
 
 .dashboard__updateLink {
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: bold;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.two-col {
+    width: 100%;
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+    background-color: #000;
+}
+.sidebar {
+    background-color: #888;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainbar {
+    display: flex;
+    flex-direction: column;
 }
