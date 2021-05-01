@@ -1,0 +1,40 @@
+.see__container {
+  background-image: url("../images/11 (1).svg");
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.card {
+  padding: 10px;
+}
+
+.blue {
+  background: rgb(0, 18, 97);
+  color: #fff;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.orange {
+  background: orange;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  border: none;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tags {
+  margin-left: 10px;
+}
+
+.voting {
+  margin-left: 10px;
+  margin-right: 10px;
+}

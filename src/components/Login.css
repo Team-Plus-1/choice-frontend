@@ -7,7 +7,6 @@
 
 .Login {
   background-image: url("../images/Cover_5.svg");
-  background-repeat: repeat-x;
   /* background-position: 80% 0%; */
   height: 100vh;
   display: flex;
