@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { useAuth } from "../contexts/AuthContext";
 import { Link, useHistory } from "react-router-dom";
 import "./Login.css";
+import squares from "../images/squares.svg";
 
 export default function Login() {
   const emailRef = useRef();
@@ -28,6 +29,9 @@ export default function Login() {
 
   return (
     <div className="Login">
+      {/* <div className="image-wrapper">
+        <img className="background-image" src={squares} />
+      </div> */}
       <h2 className="login__heading">Log In</h2>
       {error && <alert variant="danger">{error}</alert>}
       <form className="form" onSubmit={handleSubmit}>
@@ -45,13 +49,13 @@ export default function Login() {
         </button>
       </form>
       <div className="mt">
-        <Link className="login__white" to="/forgot-password">
+        <Link className="custom" to="/forgot-password">
           Forgot Password?
         </Link>
       </div>
       <div className="login__signUpLink">
         Need an account?{" "}
-        <Link className="login__white" to="/signup">
+        <Link className="custom zz" to="/signup">
           Sign Up
         </Link>
       </div>
