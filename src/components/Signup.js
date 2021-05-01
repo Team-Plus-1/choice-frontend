@@ -45,9 +45,7 @@ export default function Signup() {
       <h2 className="signup__heading">Sign Up</h2>
       {error && <alert variant="danger">{error}</alert>}
       <form className="form" onSubmit={handleSubmit}>
-        <label className="signup__label" className="form__label">
-          Email
-        </label>
+        <label className="signup__label">Email</label>
         <input className="signup__input" type="email" ref={emailRef} required />
         <label className="signup__label">Password</label>
         <input

@@ -18,7 +18,8 @@ function App() {
       <Router>
         <AuthProvider>
           <Switch>
-            <PrivateRoute exact path="/" component={LandingPage} />
+            <Route exact path="/" component={LandingPage} />
+            <Route exact path="/seereport" component={SeeReportPage} />
             <PrivateRoute exact path="/report" component={ReportPage} />
             <PrivateRoute exact path="/seereport" component={SeeReportPage} />
             <PrivateRoute exact path="/profile" component={ProfilePage} />

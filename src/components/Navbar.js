@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, Router } from "react-router-dom";
 import "./Navbar.css";
+import directions from "../images/directions.svg";
 
 function Navbar() {
   const [click, setClick] = useState(false);

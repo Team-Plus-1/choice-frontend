@@ -43,8 +43,8 @@ export default function UpdateProfile() {
 
   return (
     <>
-      <div className="container">
-        <h2 className="text-center mb-4">Update Profile</h2>
+      <div className="update__container">
+        <h2 className="update__heading">Update Profile</h2>
         {error && <alert variant="danger">{error}</alert>}
         <form className="form" onSubmit={handleSubmit}>
           <label className="update__label">Email</label>
@@ -69,15 +69,19 @@ export default function UpdateProfile() {
             ref={passwordConfirmRef}
             placeholder="Not Required"
           />
-          <button disabled={loading} className="w-100" type="submit">
+          <button
+            disabled={loading}
+            className="update__confirmBtn"
+            type="submit"
+          >
             Update
           </button>
         </form>
-      </div>
-      <div className="update__cancel">
-        <Link className="update__cancelLink" to="/">
-          Cancel
-        </Link>
+        <div className="update__cancel">
+          <Link className="update__cancelLink" to="/">
+            Cancel
+          </Link>
+        </div>
       </div>
     </>
   );

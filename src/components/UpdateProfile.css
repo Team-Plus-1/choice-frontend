@@ -1,3 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lucidatypewriter, monospace;
+}
+
+.update__container {
+  background-image: url("../images/Cover_5.svg");
+  background-repeat: repeat-x;
+  /* background-position: 80% 0%; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.update__heading {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.update__input {
+  padding: 20px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  border: 1px solid lightgray;
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 32);
+  outline: none;
+}
+
+.update__input:focus {
+  border: 1px solid rgb(0, 0, 196);
+}
+
+.update__label {
+  padding-bottom: 10px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.update__confirmBtn {
+  background-color: green;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-family: Lucidatypewriter, monospace;
+}
+
 .update__cancel {
   padding: 10px;
   border: none;
@@ -11,7 +72,7 @@
   margin-top: 10px;
   margin-right: 10px;
   width: 85px;
-  float: right;
+  float: left;
 }
 
 .update__cancel:hover {
@@ -21,4 +82,10 @@
 .update__cancelLink {
   color: #ffffff;
   text-decoration: none;
+}
+
+@media screen and (min-width: 960px) {
+  .login__btn {
+    width: 250px;
+  }
 }
