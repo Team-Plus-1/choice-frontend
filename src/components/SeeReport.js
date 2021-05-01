@@ -22,12 +22,18 @@ function SeeReport() {
     },
   ];
 
+  // let len = reports.length;
+  let count = 0;
+
   return (
     <div className="see__container">
       {reports.map(function (data, object) {
         return (
           <div className="card">
-            <ul key={object}>
+            <div
+              className={`row ${count++ % 2 === 0 ? "right" : "left"}`}
+              key={object}
+            >
               <div className="blue">
                 <h3>Story: {data.story}</h3>
               </div>
@@ -38,7 +44,7 @@ function SeeReport() {
                   <i class="fas fa-angle-double-down voting"></i>
                 </div>
               </div>
-            </ul>
+            </div>
           </div>
         );
       })}
