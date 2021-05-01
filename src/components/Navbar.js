@@ -28,7 +28,7 @@ function Navbar() {
       <nav className="navbar">
         <div className="navbar_container">
           <Link
-            to="home"
+            to="/"
             className="navbar_logo"
             onClick={closeMobileMenu}
             smooth={true}
@@ -42,7 +42,7 @@ function Navbar() {
           <ul className={click ? "nav_menu active" : "nav_menu"}>
             <li className="nav_item">
               <Link
-                to="/home"
+                to="/"
                 className="nav_links"
                 onClick={closeMobileMenu}
                 smooth={true}
@@ -64,13 +64,13 @@ function Navbar() {
             </li>
             <li className="nav_item">
               <Link
-                to="/"
+                to="/profile"
                 className="nav_links"
                 onClick={closeMobileMenu}
                 smooth={true}
                 duration={1000}
               >
-                Aboutdd
+                Profile
               </Link>
             </li>
           </ul>
