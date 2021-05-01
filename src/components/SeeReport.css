@@ -6,6 +6,10 @@
   flex-direction: column;
 }
 
+.cardscont {
+  margin-top: 100px;
+}
+
 .card {
   padding: 10px;
 }
@@ -21,6 +25,7 @@
 }
 
 .orange {
+  border-top: none;
   background: orange;
   color: #fff;
   display: flex;
@@ -48,8 +53,18 @@
 
 .right {
   align-items: flex-end;
+  margin-right: 200px;
 }
 
 .left {
   align-items: flex-start;
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 860px) {
+  .left,
+  .right {
+    align-items: center;
+    margin: 0;
+  }
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,30 +6,55 @@
   font-family: Lucidatypewriter, monospace;
 }
 
-.Report {
-  background-image: url("../images/Cover_5.svg");
-  height: 100vh;
+.ReportPage {
+  background: #000;
+}
+
+.container {
+  background-image: url("../images/Thumbnail_2.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  padding-right: 50%;
+  padding-left: 10%;
+  padding-top: 10%;
   /* align-items: center; */
+  text-align: start;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: left;
+  padding-bottom: 80px;
+  text-align: start;
 }
 
 .report__heading {
-  margin-bottom: 30px;
-  color: #fff;
+  color: whitesmoke;
+  padding-bottom: 80px;
+  font-size: 40px;
 }
 
 .report__input {
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 8px;
   margin-bottom: 20px;
+  border: 1px solid lightgray;
+  background: #fff;
+  font-size: 16px;
+  color: rgb(0, 0, 32);
+  outline: none;
+  max-width: 450px;
+}
+
+.report__input2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  max-width: 450px;
   border: 1px solid lightgray;
   background: #fff;
   font-size: 16px;
@@ -46,16 +72,18 @@
 }
 
 .report__label {
-  float: left;
   padding-bottom: 10px;
-  color: #fff;
+  color: whitesmoke;
   font-weight: bold;
 }
 
 .report__btn {
+  width: 142;
+  height: 63;
+  border-radius: 8px;
   padding: 20px;
   border: none;
-  background-color: rgb(2, 2, 110);
+  background-color: #fe9a22;
   font-weight: 500;
   font-size: 20px;
   border-radius: 3px;
@@ -63,15 +91,30 @@
   cursor: pointer;
   transition: 0.2s ease-in-out;
   margin-top: 10px;
-  float: left;
 }
 
 .form > button:hover {
-  background-color: rgb(0, 0, 196);
+  background-color: #fe9a22;
+}
+.empty {
+  padding-bottom: 170px;
 }
 
-@media screen and (min-width: 960px) {
-  .login__btn {
-    width: 250px;
+@media screen and (max-width: 1020px) {
+  .container {
+    padding-right: 10%;
+    padding-left: 15%;
+    padding-top: 40%;
+  }
+  .container {
+    background-image: url("../images/Thumbnail_1.svg");
+  }
+}
+@media screen and (max-width: 1024px) and (min-width: 601px) {
+  .container {
+    padding-right: 30%;
+  }
+  .empty {
+    padding-bottom: 250px;
   }
 }

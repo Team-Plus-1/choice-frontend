@@ -27,27 +27,29 @@ function SeeReport() {
 
   return (
     <div className="see__container">
-      {reports.map(function (data, object) {
-        return (
-          <div className="card">
-            <div
-              className={`row ${count++ % 2 === 0 ? "right" : "left"}`}
-              key={object}
-            >
-              <div className="blue">
-                <h3>Story: {data.story}</h3>
-              </div>
-              <div className="orange">
-                <div className="tags">Tags: {data.tag}</div>
-                <div className="vote">
-                  <i class="fas fa-angle-double-up voting"></i>
-                  <i class="fas fa-angle-double-down voting"></i>
+      <div className="cardscont">
+        {reports.map(function (data, object) {
+          return (
+            <div className="card">
+              <div
+                className={`row ${count++ % 2 === 0 ? "right" : "left"}`}
+                key={object}
+              >
+                <div className="blue">
+                  <h3>Story: {data.story}</h3>
+                </div>
+                <div className="orange">
+                  <div className="tags">Tags: {data.tag}</div>
+                  <div className="vote">
+                    <i class="fas fa-angle-double-up voting"></i>
+                    <i class="fas fa-angle-double-down voting"></i>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </div>
   );
 }

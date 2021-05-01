@@ -48,11 +48,16 @@ export default function ForgotPassword() {
             Reset Password
           </button>
         </form>
-        <div className="forgotPassword__loginLink">
-          <Link to="/login">Login</Link>
+        <div className="white forgotPassword__loginLink">
+          <Link className="custom" to="/login">
+            Login
+          </Link>
         </div>
-        <div className="forgotPassword__signUpLink">
-          Need an account? <Link to="/signup">Sign Up</Link>
+        <div className="white forgotPassword__signUpLink">
+          Need an account?{" "}
+          <Link className="custom" to="/signup">
+            Sign Up
+          </Link>
         </div>
       </div>
     </>

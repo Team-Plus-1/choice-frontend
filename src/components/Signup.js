@@ -66,7 +66,10 @@ export default function Signup() {
         </button>
       </form>
       <div className="signup__loginLink">
-        Already have an account? <Link to="/login">Log In</Link>
+        Already have an account?{" "}
+        <Link className="custom" to="/login">
+          Log In
+        </Link>
       </div>
     </div>
   );
