@@ -13,25 +13,42 @@ import LandingPage from "./pages/LandingPage";
 import SeeReportPage from "./pages/SeeReportPage";
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <AuthProvider>
-          <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route exact path="/seereport" component={SeeReportPage} />
-            <PrivateRoute exact path="/report" component={ReportPage} />
-            <PrivateRoute exact path="/seereport" component={SeeReportPage} />
-            <PrivateRoute exact path="/profile" component={ProfilePage} />
-            <PrivateRoute path="/update-profile" component={UpdateProfile} />
-            <Route path="/signup" component={Signup} />
-            <Route path="/login" component={Login} />
-            <Route path="/forgot-password" component={ForgotPassword} />
-          </Switch>
-        </AuthProvider>
-      </Router>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Router>
+                <AuthProvider>
+                    <Switch>
+                        <Route exact path="/" component={LandingPage} />
+                        <Route
+                            exact
+                            path="/seereport"
+                            component={SeeReportPage}
+                        />
+                        <PrivateRoute
+                            exact
+                            path="/report"
+                            component={ReportPage}
+                        />
+                        <PrivateRoute
+                            exact
+                            path="/profile"
+                            component={ProfilePage}
+                        />
+                        <PrivateRoute
+                            path="/update-profile"
+                            component={UpdateProfile}
+                        />
+                        <Route path="/signup" component={Signup} />
+                        <Route path="/login" component={Login} />
+                        <Route
+                            path="/forgot-password"
+                            component={ForgotPassword}
+                        />
+                    </Switch>
+                </AuthProvider>
+            </Router>
+        </div>
+    );
 }
 
 export default App;
