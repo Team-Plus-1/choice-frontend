@@ -5,16 +5,22 @@
   font-family: Lucidatypewriter, monospace;
 }
 
-.container {
+.dash__container {
+  background-image: url("../images/Cover_5.svg");
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* align-items: center; */
-  margin: 10px;
+  align-items: center;
+}
+
+.dash__email {
+  color: #fff;
 }
 
 .dashboard__heading {
   margin-bottom: 30px;
+  color: #fff;
 }
 
 .dashboard__logout {
@@ -28,6 +34,7 @@
   cursor: pointer;
   transition: 0.2s ease-in-out;
   margin-top: 10px;
+  margin-top: 100px;
   float: right;
   margin-right: 20px;
 }

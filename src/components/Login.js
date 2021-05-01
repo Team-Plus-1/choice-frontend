@@ -44,7 +44,7 @@ export default function Login() {
           Log In
         </button>
       </form>
-      <div>
+      <div className="mt">
         <Link className="login__white" to="/forgot-password">
           Forgot Password?
         </Link>

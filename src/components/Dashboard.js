@@ -20,11 +20,11 @@ export default function Dashboard() {
   }
 
   return (
-    <>
-      <div className="container">
+    <div className="dash__container">
+      <div className="dash__box">
         <h2 className="dashboard__heading">Profile</h2>
         {error && <alert variant="danger">{error}</alert>}
-        <h4>Email:</h4> {currentUser.email}
+        <h4 className="dash__email">Email: {currentUser.email}</h4>
         <br></br>
         <div className="btnContainer">
           <button className="dashboard__updateBtn">
@@ -43,6 +43,6 @@ export default function Dashboard() {
           Log Out
         </button>
       </div>
-    </>
+    </div>
   );
 }
