@@ -1,7 +1,13 @@
-import React, { Fragment } from "react";
+import React, { useState } from "react";
+import { useAuth } from "../contexts/AuthContext";
 import "./SeeReport.css";
+import { Route, Redirect, Link } from "react-router-dom";
 
-function SeeReport() {
+function SeeReport({ component: Component, ...rest }) {
+  const [upvote, setUpvote] = useState(0);
+  const [downvote, setDownvote] = useState(0);
+  const { currentUser } = useAuth();
+
   var reports = [
     {
       reportedURL: "dfsafa",
@@ -41,8 +47,12 @@ function SeeReport() {
                 <div className="orange">
                   <div className="tags">Tags: {data.tag}</div>
                   <div className="vote">
-                    <i class="fas fa-angle-double-up voting"></i>
-                    <i class="fas fa-angle-double-down voting"></i>
+                    <button className={`${currentUser === null ? "dno" : ""}`}>
+                      <i class="fas fa-angle-double-up voting"></i>
+                    </button>
+                    <button className={`${currentUser === null ? "dno" : ""}`}>
+                      <i class="fas fa-angle-double-down voting"></i>
+                    </button>
                   </div>
                 </div>
               </div>

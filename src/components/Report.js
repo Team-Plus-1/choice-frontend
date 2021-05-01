@@ -8,6 +8,7 @@ function Report() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(link);
 
     // db.collection("submissions")
     //   .add({
@@ -22,9 +23,9 @@ function Report() {
     //     console.log(error.message);
     //   });
 
-    // setLink("");
-    // setCategory("none");
-    // setStory("");
+    setLink("");
+    setCategory("none");
+    setStory("");
   };
   return (
     <div className="ReportPage">
@@ -89,14 +90,14 @@ function Report() {
               </option>
             </select>
           </div>
+          <div className="form__btn">
+            <input
+              className="report__btn"
+              type="submit"
+              value="Report Video"
+            ></input>
+          </div>
         </form>
-        <div className="form__btn">
-          <input
-            className="report__btn"
-            type="submit"
-            value="Report Video"
-          ></input>
-        </div>
         <empty className="empty"></empty>
       </div>
     </div>

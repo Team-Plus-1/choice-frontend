@@ -44,7 +44,7 @@ export default function Signup() {
     <div className="signup__container">
       <h2 className="signup__heading">Sign Up</h2>
       {error && <alert variant="danger">{error}</alert>}
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="signup__form" onSubmit={handleSubmit}>
         <label className="signup__label">Email</label>
         <input className="signup__input" type="email" ref={emailRef} required />
         <label className="signup__label">Password</label>

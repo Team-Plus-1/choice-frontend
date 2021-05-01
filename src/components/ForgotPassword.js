@@ -32,7 +32,7 @@ export default function ForgotPassword() {
         <h2 className="forgotPassword__heading">Password Reset</h2>
         {error && <alert variant="danger">{error}</alert>}
         {message && <alert variant="success">{message}</alert>}
-        <form className="form" onSubmit={handleSubmit}>
+        <form className="forgot__form" onSubmit={handleSubmit}>
           <label className="forgot__emailLabel">Email</label>
           <input
             className="forgot__input"

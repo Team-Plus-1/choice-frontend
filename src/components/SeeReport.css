@@ -1,6 +1,6 @@
 .see__container {
   background-image: url("../images/11 (1).svg");
-  height: 100vh;
+  height: 120vh;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -10,15 +10,19 @@
   margin-top: 100px;
 }
 
+.dno {
+  display: none;
+}
+
 .card {
-  padding: 10px;
+  padding: 30px;
 }
 
 .blue {
   background: rgb(0, 18, 97);
   color: #fff;
   width: 250px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 5px;
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
@@ -35,6 +39,7 @@
   border-radius: 5px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+  padding: 5px;
 }
 
 .tags {

@@ -26,6 +26,7 @@
 .form {
   display: flex;
   flex-direction: column;
+  /* transform: translate(20%, 20%); */
   justify-content: left;
   padding-bottom: 80px;
   text-align: start;
@@ -90,7 +91,7 @@
   color: #fff;
   cursor: pointer;
   transition: 0.2s ease-in-out;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .form > button:hover {
@@ -98,6 +99,17 @@
 }
 .empty {
   padding-bottom: 170px;
+}
+
+@media screen and (min-width: 1520px) {
+  .form,
+  .report__heading {
+    transform: translate(20%, 0%);
+  }
+
+  .report__btn {
+    transform: translate(95%, 0%);
+  }
 }
 
 @media screen and (max-width: 1020px) {

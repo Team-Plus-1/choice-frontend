@@ -34,7 +34,7 @@ export default function Login() {
       </div> */}
       <h2 className="login__heading">Log In</h2>
       {error && <alert variant="danger">{error}</alert>}
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="login__form" onSubmit={handleSubmit}>
         <label className="login__label">Email</label>
         <input className="login__input" type="email" ref={emailRef} required />
         <label className="login__label">Password</label>
