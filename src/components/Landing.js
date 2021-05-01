@@ -5,12 +5,21 @@ import squares from "../images/squares.svg";
 
 function Landing() {
   return (
-    <div className="Landing">
-      <maintext className="maintext">Providing a Better</maintext>
-      Browsing<span className="text"> Choice</span>
-      <button className="landing__btn">Launch Extension</button>
-      <div className="landing__squares">
-        <img src={squares} />
+    <div
+      className="Landing"
+      style={{
+        backgroundImage: { bg },
+      }}
+    >
+      <div className="image-wrapper">
+        <img className="background-image" src={squares} />
+      </div>
+      <div className="content-wrapper">
+        <h1 className="maintext">
+          Providing a Better <br />
+          Browsing <span className="text"> Choice</span>{" "}
+        </h1>
+        <button className="landing__btn">Launch Extension</button>
       </div>
     </div>
   );
